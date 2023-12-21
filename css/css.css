@@ -3,8 +3,12 @@
     font-family: sans-serif;
 
 }
-
-
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 .header {
     background-color: #0769e0;
@@ -42,12 +46,20 @@
     font-weight: bold;
     padding: 0 40px;
 }
+@media (min-width: 768px) {
+    .link {
+        justify-content: colum;
+    }
+}
 .portada {
-    background-image: url("../img/portada.jpg");
+    background-image: url("../img/portada.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
-    height: 410rem;
+    background-position: 1px;
+    
+    height: 500px;
+    padding: 20px;
+    width: 100%;
 }
 .developer {
     display: flex;
